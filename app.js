@@ -4,7 +4,7 @@ const fs = require('fs');
 
 // Créer une application express
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Middleware pour parser les données JSON et les données de formulaire
 app.use(express.json());
