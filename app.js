@@ -14,7 +14,10 @@ app.use(express.static(__dirname + '/public'));
 console.log(__dirname + '/public');
 
 const submitRoutes = require('./src/routes/submit.route');
+const examen2Routes = require('./src/routes/examen2.route');
+
 app.use('/submit', submitRoutes);
+app.use('/examen2', examen2Routes);
 
 
 app.listen(PORT, () => {
